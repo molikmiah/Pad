@@ -1,7 +1,9 @@
 <div class="flex-container">
   <div class="flex-item">
-    <div class="loader" *ngIf="showLoader"></div>
+    <!-- loading spinner -->
+    <div class="loader-overlay" *ngIf="showLoader"><div class="loader"></div></div>
 
+    <!-- login form -->
     <form>
       <input type="password" placeholder="password" />
       <button class="button-primary">Log In</button>
