@@ -1,5 +1,3 @@
-// src/electron/electron.js
-
 const {app, BrowserWindow} = require('electron');
 
 // Keep a global reference of the window object, if you don't, the window will
@@ -14,7 +12,7 @@ function createWindow () {
   win.loadURL(`file://${__dirname}/index.html`);
 
   // Open the DevTools.
-  win.webContents.openDevTools();
+  // win.webContents.openDevTools();
 
   // Emitted when the window is closed.
   win.on('closed', () => {
@@ -22,7 +20,7 @@ function createWindow () {
     // in an array if your app supports multi windows, this is the time
     // when you should delete the corresponding element.
     win = null;
-  })
+  });
 }
 
 // This method will be called when Electron has finished
