@@ -20,8 +20,8 @@ div {
 }
 
 .sidebar {
-  background-color: #787878;
-  width: 250px;
+  /*background-color: #787878;*/
+  width: 200px;
 }
 
 .main {
@@ -61,4 +61,8 @@ div {
 
 .padding-right {
   padding-right: 10px;
+}
+
+.padding-top {
+  padding-top: 10px;
 }
