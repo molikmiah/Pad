@@ -1,0 +1,64 @@
+div {
+  color: white;
+}
+
+.table {
+    display: table;
+}
+
+.table--fixed {
+    table-layout: fixed;
+}
+
+.table-row {
+    display: table-row;
+}
+
+.table-cell {
+    display: table-cell;
+    word-wrap: break-word;
+}
+
+.sidebar {
+  background-color: #787878;
+  width: 250px;
+}
+
+.main {
+  background-color: #fff;
+  color: #000;
+}
+
+.top-icon-block {
+  padding: 10px;
+  text-align: center;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.full-height {
+  height: 100vh;
+}
+
+.shadow-left {
+    -webkit-box-shadow: -5px 0px 15px 0px rgba(0,0,0,0.75);
+     -moz-box-shadow: -5px 0px 15px 0px rgba(0,0,0,0.75);
+          box-shadow: -5px 0px 15px 0px rgba(0,0,0,0.75);
+}
+
+.bottom-right {
+  color: #efefef;
+  position: absolute;
+  bottom:4px;
+  right:0;
+}
+
+.small-menu-icon {
+  width: 2rem;
+}
+
+.padding-right {
+  padding-right: 10px;
+}

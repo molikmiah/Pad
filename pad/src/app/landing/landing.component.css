@@ -46,3 +46,16 @@
 .flex-item {
   margin: auto;
 }
+
+.button-green {
+  background-color: rgb(28,162,116);
+  border-color: rgb(28,162,116);
+  color: #fff;
+}
+.button-green:hover {
+  background-color: rgb(28,142,116);
+}
+
+.auth-error {
+  color: rgb(200,0,0);
+}
