@@ -2,6 +2,10 @@ div {
   color: white;
 }
 
+strong {
+  color: rgb(28,162,116);
+}
+
 .table {
     display: table;
 }
@@ -46,6 +50,12 @@ div {
     -webkit-box-shadow: -5px 0px 15px 0px rgba(0,0,0,0.75);
      -moz-box-shadow: -5px 0px 15px 0px rgba(0,0,0,0.75);
           box-shadow: -5px 0px 15px 0px rgba(0,0,0,0.75);
+}
+
+.shadow {
+  -webkit-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
+box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.75);
 }
 
 .bottom-right {
