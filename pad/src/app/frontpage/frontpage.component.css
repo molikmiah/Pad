@@ -2,10 +2,6 @@ div {
   color: white;
 }
 
-strong {
-  color: rgb(28,162,116);
-}
-
 .table {
     display: table;
 }
@@ -24,8 +20,50 @@ strong {
 }
 
 .sidebar {
-  /*background-color: #787878;*/
+  background-color: #1d1d1d;
   width: 200px;
+  padding: 10px;
+  height: 100%;
+}
+
+.sidebar-item {
+  display: block;
+  padding: 10px;
+  background-color: #ececec;
+  color: #464646;
+  box-shadow: #000 0 0 10 0;
+  border-radius: 5px;
+
+  font-size: 12px;
+}
+
+.sidebar-item:hover {
+  background-color: #fff;
+}
+
+.sidebar-item--title {
+  font-size: 14px;
+  font-weight: 800;
+  display: block;
+}
+
+.sidebar-item-menu-icon {
+  width: 1.5rem;
+  padding-left: 10px;
+}
+
+.sidebar-item-hr {
+  border-color: #dadada;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sidebar-item-menu-container {
+  text-align: right;
+}
+
+.list-style--none {
+  list-style: none;
 }
 
 .main {
@@ -47,9 +85,9 @@ strong {
 }
 
 .shadow-left {
-    -webkit-box-shadow: -5px 0px 15px 0px rgba(0,0,0,0.75);
-     -moz-box-shadow: -5px 0px 15px 0px rgba(0,0,0,0.75);
-          box-shadow: -5px 0px 15px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: -3px 5px 15px 0px rgba(0,0,0,0.75);
+     -moz-box-shadow: -3px 5px 15px 0px rgba(0,0,0,0.75);
+          box-shadow: -3px 5px 15px 0px rgba(0,0,0,0.75);
 }
 
 .shadow {

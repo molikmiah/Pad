@@ -14,6 +14,10 @@ export class LandingComponent implements OnInit {
   public showLoader: boolean = true;
   public showAuthError: boolean = false;
 
+  private DUBUG = {
+    skipLogin: true
+  };
+
   @Input() password;
 
   constructor(private router: Router, private route: ActivatedRoute) { }
@@ -22,6 +26,14 @@ export class LandingComponent implements OnInit {
     // on view init, show loader
     this.load(750, () => {
       this.showLogin = true;
+
+      // SKIP LOGIN for development
+      if (this.DUBUG.skipLogin) {
+        this.load(150, () => {
+          // transition to frontpage
+          this.router.navigate(['frontpage'], { relativeTo: this.route });
+        });
+      }
     });
   }
 
