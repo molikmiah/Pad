@@ -3,13 +3,13 @@ import * as _ from 'lodash';
 declare var localStorage: any;
 
 @Injectable()
-export class DatabaseService implements OnInit {
+export class DatabaseService {
 
   private DBConfig = {
     name: 'db_name',
     prefix: 'v1',
     secret: 'rn23k=23-1p2[Fwee@£$wFR31Q',
-    lsKey: '!app!pad!' + this.DBConfig.secret
+    lsKey: '!app!pad!#core'
   };
 
   public collection;
@@ -17,9 +17,11 @@ export class DatabaseService implements OnInit {
 
   constructor() { }
 
-  ngOnInit() {
-    this.logger('Initializing the app', 1, 2);
+  public connect() {
+    this.logger('Initializing the app', 1, 1);
     this.getDB();
+
+    this.logger(this.collection);
   }
 
   public getByID(id): any {
@@ -29,6 +31,10 @@ export class DatabaseService implements OnInit {
   }
 
   public save(item): void {
+    localStorage.clear(this.DBConfig.lsKey);
+    this.saveDB(JSON.stringify(item));
+
+
     // check if item already exists in db
 
           // if it exists, then update valies
@@ -43,7 +49,7 @@ export class DatabaseService implements OnInit {
   }
 
   private getDB(): void {
-    this.collection = localStorage.getItem(this.DBConfig.lsKey);
+    this.collection = JSON.parse(localStorage.getItem(this.DBConfig.lsKey));
   }
 
   private logger(message: any, pre?: number, post?: number): void {
@@ -138,6 +144,7 @@ export class DatabaseService implements OnInit {
           return t
       },
       _utf8_decode: function(e) {
+        var c1, c2, c3;
           var t = "";
           var n = 0;
           var r = c1 = c2 = 0;

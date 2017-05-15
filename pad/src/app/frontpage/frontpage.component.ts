@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatabaseService } from '../core/database.service';
 
 declare var MediumEditor: any;
 
@@ -9,9 +10,11 @@ declare var MediumEditor: any;
 })
 export class FrontpageComponent implements OnInit {
 
-  constructor() { }
+  constructor(private db: DatabaseService) { }
 
   ngOnInit() {
+    this.db.connect();
+
     var editor = new MediumEditor('.editable', {
       toolbar: {
         buttons: ['bold', 'italic', 'underline', 'strikethrough', 'anchor', 'image', 'quote']
@@ -27,6 +30,8 @@ export class FrontpageComponent implements OnInit {
     allNotes.forEach(note => {
       console.log(note);
     });
+
+    this.db.save(allNotes);
   }
 
 }
