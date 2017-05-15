@@ -2,6 +2,10 @@ div {
   color: white;
 }
 
+.editable {
+  color: black;
+}
+
 .table {
     display: table;
 }
