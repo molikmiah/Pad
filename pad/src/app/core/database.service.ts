@@ -9,7 +9,7 @@ export class DatabaseService {
     name: 'db_name',
     prefix: 'v1',
     secret: 'rn23k=23-1p2[Fwee@£$wFR31Q',
-    lsKey: '!app!pad!#core'
+    lsKey: 'PAD'
   };
 
   public collection;
