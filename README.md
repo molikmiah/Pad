@@ -22,3 +22,8 @@ This is an overview of the features, what the user expects and possible tools an
 * `ng build`
 * `ng serve`
 * `npm run electron`
+
+### App Folders
+* `pad-client`: This contains the PAD web-app and Electron Desktop App build/source codes.
+* `pad-server`: This will be a Node based web-server used to serve the PAD web client rather than using the
+conventional Apache HTTP Server.
