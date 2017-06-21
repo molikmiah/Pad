@@ -2,6 +2,8 @@
 
 *Simply organise your thoughts, ideas and snippets in Notepad*
 
+⚠️ Work In Progress ⚠️
+
 ### Table of Contents
 1. What is Pad?
 2. Design & Deveopment Notes
